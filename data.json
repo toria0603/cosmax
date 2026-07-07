@@ -1,0 +1,1653 @@
+{
+  "meta": {
+    "service": "성분알리미",
+    "description": "국가별 화장품 성분 규제 상태 데이터베이스 (프로토타입)",
+    "countries_supported": [
+      "EU",
+      "US",
+      "TH",
+      "CN"
+    ],
+    "status_values": [
+      "allowed",
+      "restricted",
+      "banned"
+    ],
+    "matching_logic": "입력 성분을 이 DB에서 찾아, 선택한 국가의 status를 그대로 사용: allowed→초록, restricted→노란색(하단에 max_concentration 표시), banned→빨간색. 국가별로 status가 다를 수 있음(예: EU 금지/미국 허용). 성분을 찾았지만 선택한 국가 데이터가 없거나, DB에 성분이 아예 없으면 노란색(미확인, 개별 검토 필요)으로 표시",
+    "disclaimer": "이 데이터는 화장품 업계 일반 지식 및 공개 검색 결과를 기반으로 정리한 초안이며, EU CosIng·FDA·태국 ACD·중국 NMPA 등 공식 소스와 성분별로 전수 대조되지 않았습니다. 특히 태국·중국은 일부 성분만 확인되었으니 실서비스에 반영하기 전 반드시 공식 출처와 대조 확인이 필요합니다.",
+    "last_updated": "2026-07-07"
+  },
+  "ingredients": [
+    {
+      "inci_name": "Water",
+      "aliases": [
+        "Aqua"
+      ],
+      "function": "용매",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Glycerin",
+      "aliases": [],
+      "function": "보습제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Butylene Glycol",
+      "aliases": [],
+      "function": "보습제/용매",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Propylene Glycol",
+      "aliases": [],
+      "function": "보습제/용매",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Propanediol",
+      "aliases": [],
+      "function": "보습제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Pentylene Glycol",
+      "aliases": [],
+      "function": "보습제/보존 보조",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Dipropylene Glycol",
+      "aliases": [],
+      "function": "용매",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Cetearyl Alcohol",
+      "aliases": [],
+      "function": "에멀전화제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Cetyl Alcohol",
+      "aliases": [],
+      "function": "에멀전화제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Stearyl Alcohol",
+      "aliases": [],
+      "function": "에멀전화제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Stearic Acid",
+      "aliases": [],
+      "function": "계면활성제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Glyceryl Stearate",
+      "aliases": [],
+      "function": "에멀전화제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "PEG-100 Stearate",
+      "aliases": [],
+      "function": "에멀전화제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Dimethicone",
+      "aliases": [],
+      "function": "피부컨디셔닝제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Cyclopentasiloxane",
+      "aliases": [],
+      "function": "피부컨디셔닝제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Niacinamide",
+      "aliases": [],
+      "function": "활성성분",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Panthenol",
+      "aliases": [],
+      "function": "보습/컨디셔닝",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Tocopherol",
+      "aliases": [],
+      "function": "항산화제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Tocopheryl Acetate",
+      "aliases": [],
+      "function": "항산화제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Ascorbic Acid",
+      "aliases": [],
+      "function": "항산화/활성성분",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Sodium Hyaluronate",
+      "aliases": [],
+      "function": "보습제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Hyaluronic Acid",
+      "aliases": [],
+      "function": "보습제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Allantoin",
+      "aliases": [],
+      "function": "피부컨디셔닝",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Sodium PCA",
+      "aliases": [],
+      "function": "보습제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Xanthan Gum",
+      "aliases": [],
+      "function": "점증제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Carbomer",
+      "aliases": [],
+      "function": "점증제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Disodium EDTA",
+      "aliases": [],
+      "function": "킬레이트제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Trehalose",
+      "aliases": [],
+      "function": "보습제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Betaine",
+      "aliases": [],
+      "function": "보습제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Squalane",
+      "aliases": [],
+      "function": "에몰리언트",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Caprylic/Capric Triglyceride",
+      "aliases": [],
+      "function": "에몰리언트",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Simmondsia Chinensis (Jojoba) Seed Oil",
+      "aliases": [
+        "Jojoba Oil"
+      ],
+      "function": "에몰리언트",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Butyrospermum Parkii (Shea) Butter",
+      "aliases": [
+        "Shea Butter"
+      ],
+      "function": "에몰리언트",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Aloe Barbadensis Leaf Juice",
+      "aliases": [
+        "Aloe Vera Leaf Juice"
+      ],
+      "function": "피부컨디셔닝",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Centella Asiatica Extract",
+      "aliases": [],
+      "function": "피부컨디셔닝",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Sodium Chloride",
+      "aliases": [],
+      "function": "점도조절제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Citric Acid",
+      "aliases": [],
+      "function": "pH조절제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Sodium Citrate",
+      "aliases": [],
+      "function": "pH조절제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Polysorbate 20",
+      "aliases": [],
+      "function": "계면활성제",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Caprylyl Glycol",
+      "aliases": [],
+      "function": "보습/보존 보조",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "TH": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        },
+        "CN": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": ""
+        }
+      }
+    },
+    {
+      "inci_name": "Bithionol",
+      "aliases": [],
+      "function": "항균제",
+      "countries": {
+        "EU": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "Annex II"
+        },
+        "US": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "21 CFR 700.11"
+        },
+        "TH": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "ASEAN 화장품지침(ACD), EU Annex II와 동일 번호체계로 동시 금지"
+        },
+        "CN": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "화장품 금지원료목록(2021)"
+        }
+      }
+    },
+    {
+      "inci_name": "Chloroform",
+      "aliases": [],
+      "function": "용매(과거 사용)",
+      "countries": {
+        "EU": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "Annex II, 발암 우려"
+        },
+        "US": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "21 CFR 700.18"
+        },
+        "TH": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "ASEAN 화장품지침(ACD), EU Annex II와 동일 번호체계로 동시 금지"
+        },
+        "CN": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "화장품 금지원료목록(2021)"
+        }
+      }
+    },
+    {
+      "inci_name": "Methylene Chloride",
+      "aliases": [
+        "Dichloromethane"
+      ],
+      "function": "용매(과거 사용)",
+      "countries": {
+        "EU": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "Annex II, 발암 우려"
+        },
+        "US": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "21 CFR 700.19"
+        },
+        "TH": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "ASEAN 화장품지침(ACD), EU Annex II와 동일 번호체계로 동시 금지"
+        },
+        "CN": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "화장품 금지원료목록(2021)"
+        }
+      }
+    },
+    {
+      "inci_name": "Vinyl Chloride",
+      "aliases": [],
+      "function": "에어로졸 추진제",
+      "countries": {
+        "EU": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "Annex II, 에어로졸 제품 금지"
+        },
+        "US": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "21 CFR 700.14"
+        },
+        "TH": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "ASEAN 화장품지침(ACD), EU Annex II와 동일 번호체계로 동시 금지"
+        },
+        "CN": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "화장품 금지원료목록(2021)"
+        }
+      }
+    },
+    {
+      "inci_name": "Zirconium",
+      "aliases": [
+        "Zirconium Compounds"
+      ],
+      "function": "에어로졸 첨가제",
+      "countries": {
+        "EU": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "에어로졸 제품 전용 금지"
+        },
+        "US": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "21 CFR 700.16, 에어로졸 제품 전용 금지"
+        },
+        "TH": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "ASEAN 화장품지침(ACD), EU Annex II와 동일 번호체계로 동시 금지"
+        },
+        "CN": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "화장품 금지원료목록(2021)"
+        }
+      }
+    },
+    {
+      "inci_name": "Lead Acetate",
+      "aliases": [],
+      "function": "염색 성분",
+      "countries": {
+        "EU": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "Annex II"
+        },
+        "US": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "2018년 FDA 색소첨가물 승인 철회"
+        },
+        "TH": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "ASEAN 화장품지침(ACD), EU Annex II와 동일 번호체계로 동시 금지"
+        },
+        "CN": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "화장품 금지원료목록(2021)"
+        }
+      }
+    },
+    {
+      "inci_name": "Chlorofluorocarbon Propellants",
+      "aliases": [
+        "CFC Propellants"
+      ],
+      "function": "에어로졸 추진제",
+      "countries": {
+        "EU": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "환경 규제(몬트리올 프로토콜) 연동"
+        },
+        "US": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "21 CFR 700.23"
+        },
+        "TH": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "ASEAN 화장품지침(ACD), EU Annex II와 동일 번호체계로 동시 금지"
+        },
+        "CN": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "화장품 금지원료목록(2021)"
+        }
+      }
+    },
+    {
+      "inci_name": "Halogenated Salicylanilides",
+      "aliases": [
+        "Dibromsalan",
+        "Tribromsalan"
+      ],
+      "function": "항균제",
+      "countries": {
+        "EU": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "광과민성 우려"
+        },
+        "US": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "21 CFR 700.15"
+        },
+        "TH": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "ASEAN 화장품지침(ACD), EU Annex II와 동일 번호체계로 동시 금지"
+        },
+        "CN": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "화장품 금지원료목록(2021)"
+        }
+      }
+    },
+    {
+      "inci_name": "Butylphenyl Methylpropional",
+      "aliases": [
+        "Lilial"
+      ],
+      "function": "향료",
+      "countries": {
+        "EU": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "생식독성(CMR) 우려로 2022년 금지"
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": "연방 차원의 금지 없음"
+        },
+        "TH": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "ASEAN 화장품지침, EU Annex II 반영 (시차 존재 가능)"
+        }
+      }
+    },
+    {
+      "inci_name": "Hydroxyisohexyl 3-Cyclohexene Carboxaldehyde",
+      "aliases": [
+        "Lyral",
+        "HICC"
+      ],
+      "function": "향료",
+      "countries": {
+        "EU": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "알러지 유발 물질, 2022년 금지"
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": "연방 차원의 금지 없음"
+        },
+        "TH": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "ASEAN 화장품지침, EU Annex II 반영 (시차 존재 가능)"
+        }
+      }
+    },
+    {
+      "inci_name": "Atranol",
+      "aliases": [],
+      "function": "향료(오크모스 성분)",
+      "countries": {
+        "EU": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "알러지 유발 물질, 2019년 금지"
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": "연방 차원의 금지 없음"
+        },
+        "TH": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "ASEAN 화장품지침, EU Annex II 반영 (시차 존재 가능)"
+        }
+      }
+    },
+    {
+      "inci_name": "Chloroatranol",
+      "aliases": [],
+      "function": "향료(오크모스 성분)",
+      "countries": {
+        "EU": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "알러지 유발 물질, 2019년 금지"
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": "연방 차원의 금지 없음"
+        },
+        "TH": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "ASEAN 화장품지침, EU Annex II 반영 (시차 존재 가능)"
+        }
+      }
+    },
+    {
+      "inci_name": "Isopropylparaben",
+      "aliases": [],
+      "function": "보존제",
+      "countries": {
+        "EU": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "2014년 개정으로 금지"
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": "연방 차원의 금지 없음"
+        },
+        "TH": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "ASEAN 화장품지침, EU 2014년 개정 반영 (시차 존재 가능)"
+        }
+      }
+    },
+    {
+      "inci_name": "Mercury Compounds",
+      "aliases": [
+        "Mercury",
+        "Thimerosal"
+      ],
+      "function": "보존제(과거 사용)",
+      "countries": {
+        "EU": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "Annex II, 예외 없이 전면 금지"
+        },
+        "US": {
+          "status": "restricted",
+          "max_concentration": "65ppm (아이메이크업 제품 전용)",
+          "note": "그 외 용도는 금지"
+        },
+        "TH": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "ASEAN 화장품지침, EU Annex II 반영"
+        },
+        "CN": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "화장품 금지원료목록"
+        }
+      }
+    },
+    {
+      "inci_name": "Hydroquinone",
+      "aliases": [],
+      "function": "미백 활성성분",
+      "countries": {
+        "EU": {
+          "status": "banned",
+          "max_concentration": "0.02% (인조네일 시스템 제외 전면 금지)",
+          "note": "Annex II, 피부 미백 용도 화장품 금지"
+        },
+        "US": {
+          "status": "restricted",
+          "max_concentration": "2%",
+          "note": "OTC 의약품 모노그래프 하에서만 허용"
+        },
+        "TH": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "ASEAN 화장품지침, EU Annex II 반영"
+        },
+        "CN": {
+          "status": "restricted",
+          "max_concentration": null,
+          "note": "특수 화장품으로 별도 등록 필요, 일반 화장품 사용 제한"
+        }
+      }
+    },
+    {
+      "inci_name": "Formaldehyde",
+      "aliases": [],
+      "function": "보존제",
+      "countries": {
+        "EU": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "Annex II, 성분 자체 사용 금지"
+        },
+        "US": {
+          "status": "restricted",
+          "max_concentration": null,
+          "note": "전면 금지는 아니나 라벨링·안전성 가이드라인 적용"
+        },
+        "TH": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "ASEAN 화장품지침, EU Annex II 반영"
+        },
+        "CN": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "화장품 금지원료목록"
+        }
+      }
+    },
+    {
+      "inci_name": "Cannabidiol",
+      "aliases": [
+        "CBD"
+      ],
+      "function": "활성성분",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": "CosIng 등재, THC 함량 등 별도 조건 적용"
+        },
+        "US": {
+          "status": "allowed",
+          "max_concentration": null,
+          "note": "화장품 자체 금지 없음 (FDA 가이드라인은 유동적)"
+        },
+        "CN": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "2021년 개정, 대마 유래 성분 전면 금지 (세계 최초 사례)"
+        }
+      }
+    },
+    {
+      "inci_name": "Bemotrizinol",
+      "aliases": [
+        "Tinosorb S"
+      ],
+      "function": "자외선 차단(UV 필터)",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": "10%",
+          "note": "Annex VI 등재"
+        },
+        "US": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "화장품 금지가 아니라 OTC 자외선차단 의약품 모노그래프 미등재로 사용 불가"
+        }
+      }
+    },
+    {
+      "inci_name": "Bisoctrizole",
+      "aliases": [
+        "Tinosorb M"
+      ],
+      "function": "자외선 차단(UV 필터)",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": "10%",
+          "note": "Annex VI 등재"
+        },
+        "US": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "OTC 모노그래프 미등재로 사용 불가 (화장품 자체 금지 아님)"
+        }
+      }
+    },
+    {
+      "inci_name": "Diethylamino Hydroxybenzoyl Hexyl Benzoate",
+      "aliases": [
+        "Uvinul A Plus"
+      ],
+      "function": "자외선 차단(UV 필터)",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": "10%",
+          "note": "Annex VI 등재"
+        },
+        "US": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "OTC 모노그래프 미등재로 사용 불가 (화장품 자체 금지 아님)"
+        }
+      }
+    },
+    {
+      "inci_name": "Ethylhexyl Triazone",
+      "aliases": [
+        "Uvinul T150"
+      ],
+      "function": "자외선 차단(UV 필터)",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": "5%",
+          "note": "Annex VI 등재"
+        },
+        "US": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "OTC 모노그래프 미등재로 사용 불가 (화장품 자체 금지 아님)"
+        }
+      }
+    },
+    {
+      "inci_name": "Amiloxate",
+      "aliases": [
+        "Isoamyl p-Methoxycinnamate"
+      ],
+      "function": "자외선 차단(UV 필터)",
+      "countries": {
+        "EU": {
+          "status": "allowed",
+          "max_concentration": "10%",
+          "note": "Annex VI 등재"
+        },
+        "US": {
+          "status": "banned",
+          "max_concentration": null,
+          "note": "OTC 모노그래프 미등재로 사용 불가 (화장품 자체 금지 아님)"
+        }
+      }
+    }
+  ]
+}
