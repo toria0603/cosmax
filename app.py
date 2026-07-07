@@ -288,7 +288,8 @@ if submit and selected_countries and ingredient_list:
                 details.append({"code": code, "ing": ing, "result": result})
         rows.append(row)
 
-    df = pd.DataFrame(rows).set_index("성분")
+    df = pd.DataFrame(rows)
+    country_columns = [COUNTRY_LABELS[code] for code in selected_countries]
 
     label_to_status = {v: k for k, v in STATUS_LABELS.items()}
 
@@ -298,7 +299,9 @@ if submit and selected_countries and ingredient_list:
         return f"background-color: {bg}; color: {fg}; font-weight: 700; text-align: center;"
 
     # pandas 2.1+ 는 applymap 대신 map 사용 (구버전 applymap은 pandas 3.0에서 제거됨)
-    styled = df.style.map(color_cell)
+    # 성분명이 중복 입력되면 set_index 결과가 non-unique해져 Styler가 KeyError를 던지므로
+    # 인덱스에 의존하지 않고 country_columns만 subset으로 지정해서 스타일링한다.
+    styled = df.style.hide(axis="index").map(color_cell, subset=country_columns)
     st.dataframe(styled, use_container_width=True)
 
     st.markdown("#### 세부 사항")
