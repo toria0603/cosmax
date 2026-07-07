@@ -121,19 +121,35 @@ st.markdown(
     }
     .hero-band p strong { color: #FFFFFF; }
 
-    /* 국가 선택 pills: 선택 상태 남색 (Streamlit이 선택된 pill에 kind="pillsActive"를 사용) */
-    [data-testid="stPills"] button[kind="pillsActive"] {
+    /* 국가 선택 pills: 선택 상태 남색
+       (실제 렌더링 컨테이너는 data-testid="stButtonGroup", 선택된 버튼은
+       data-selected 속성으로 표시됨. 구버전 호환을 위해 예전 속성들도 함께 지정) */
+    [data-testid="stButtonGroup"] button[data-selected],
+    [data-testid="stPills"] button[data-selected],
+    [data-testid="stButtonGroup"] button[kind="pillsActive"],
+    [data-testid="stPills"] button[kind="pillsActive"],
+    [data-testid="stButtonGroup"] [aria-pressed="true"],
+    [data-testid="stButtonGroup"] [aria-checked="true"],
+    [data-testid="stPills"] [aria-pressed="true"],
+    [data-testid="stPills"] [aria-checked="true"] {
         background-color: #3D5791 !important;
         border-color: #3D5791 !important;
         color: #FFFFFF !important;
     }
-    [data-testid="stPills"] button[kind="pillsActive"]:hover,
-    [data-testid="stPills"] button[kind="pillsActive"]:focus-visible {
+    [data-testid="stButtonGroup"] button[data-selected]:is([data-hovered], [data-focus-visible]),
+    [data-testid="stPills"] button[data-selected]:is([data-hovered], [data-focus-visible]) {
         background-color: #2E4370 !important;
         border-color: #2E4370 !important;
         color: #FFFFFF !important;
     }
-    [data-testid="stPills"] button[kind="pillsActive"] * {
+    [data-testid="stButtonGroup"] button[data-selected] *,
+    [data-testid="stPills"] button[data-selected] *,
+    [data-testid="stButtonGroup"] button[kind="pillsActive"] *,
+    [data-testid="stPills"] button[kind="pillsActive"] *,
+    [data-testid="stButtonGroup"] [aria-pressed="true"] *,
+    [data-testid="stButtonGroup"] [aria-checked="true"] *,
+    [data-testid="stPills"] [aria-pressed="true"] *,
+    [data-testid="stPills"] [aria-checked="true"] * {
         color: #FFFFFF !important;
     }
     /* 조회하기 버튼: 배경 남색 + 글자 흰색 */
