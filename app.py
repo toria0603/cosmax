@@ -121,17 +121,21 @@ st.markdown(
     }
     .hero-band p strong { color: #FFFFFF; }
 
-    /* 국가 선택 pills를 원본 남색 톤에 최대한 가깝게 (Streamlit 내부 구조 특성상
-       버전에 따라 100% 동일하게 적용되지 않을 수 있습니다) */
+    /* 국가 선택 pills: 연한 남색 */
     [data-testid="stPills"] [aria-pressed="true"],
     [data-testid="stPills"] [aria-checked="true"] {
+        background-color: #6E85B5 !important;
+        border-color: #6E85B5 !important;
+        color: #FFFFFF !important;
+    }
+    /* 조회하기 버튼: 배경 남색 + 글자 흰색 */
+    button[kind="primary"] {
         background-color: #3D5791 !important;
         border-color: #3D5791 !important;
         color: #FFFFFF !important;
     }
-    button[kind="primary"] {
-        background-color: #3D5791 !important;
-        border-color: #3D5791 !important;
+    button[kind="primary"] * {
+        color: #FFFFFF !important;
     }
 
     .detail-item {
