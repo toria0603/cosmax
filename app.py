@@ -121,22 +121,19 @@ st.markdown(
     }
     .hero-band p strong { color: #FFFFFF; }
 
-    /* 국가 선택 pills: 기본(미선택) 상태 남색 */
-    [data-testid="stPills"] button,
-    [data-testid="stPills"] [role="radio"],
-    [data-testid="stPills"] [role="checkbox"] {
-        border-color: #6E85B5 !important;
-        color: #6E85B5 !important;
-    }
-    /* 국가 선택 pills: 선택 상태 남색 */
-    [data-testid="stPills"] [aria-pressed="true"],
-    [data-testid="stPills"] [aria-checked="true"] {
+    /* 국가 선택 pills: 선택 상태 남색 (Streamlit이 선택된 pill에 kind="pillsActive"를 사용) */
+    [data-testid="stPills"] button[kind="pillsActive"] {
         background-color: #3D5791 !important;
         border-color: #3D5791 !important;
         color: #FFFFFF !important;
     }
-    [data-testid="stPills"] [aria-pressed="true"] *,
-    [data-testid="stPills"] [aria-checked="true"] * {
+    [data-testid="stPills"] button[kind="pillsActive"]:hover,
+    [data-testid="stPills"] button[kind="pillsActive"]:focus-visible {
+        background-color: #2E4370 !important;
+        border-color: #2E4370 !important;
+        color: #FFFFFF !important;
+    }
+    [data-testid="stPills"] button[kind="pillsActive"] * {
         color: #FFFFFF !important;
     }
     /* 조회하기 버튼: 배경 남색 + 글자 흰색 */
@@ -150,14 +147,11 @@ st.markdown(
     }
 
     /* 성분 입력 textarea: 테두리 진한 회색 */
-    [data-testid="stTextArea"] textarea,
-    [data-testid="stTextArea"] div[data-baseweb="textarea"] {
+    [data-testid="stTextAreaRootElement"] {
         border-color: #4B4B4B !important;
     }
-    [data-testid="stTextArea"] textarea:focus,
-    [data-testid="stTextArea"] div[data-baseweb="textarea"]:focus-within {
+    [data-testid="stTextAreaRootElement"]:focus-within {
         border-color: #4B4B4B !important;
-        box-shadow: 0 0 0 1px #4B4B4B !important;
     }
 
     .detail-item {
