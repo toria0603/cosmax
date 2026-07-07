@@ -10,10 +10,12 @@ import streamlit as st
 # ────────────────────────────────────────────────────────────
 DATA_PATH = Path(__file__).parent / "data.json"
 
+
 @st.cache_data
 def load_db():
     with open(DATA_PATH, encoding="utf-8") as f:
         return json.load(f)
+
 
 DB = load_db()
 INGREDIENTS = DB["ingredients"]
@@ -88,7 +90,7 @@ st.markdown(
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
 
-    html, body, [class*="css"]  {
+    html, body, [class*="css"] {
         font-family: 'Noto Sans KR', sans-serif;
     }
 
@@ -117,8 +119,19 @@ st.markdown(
         line-height: 1.6;
         margin: 4px 0;
     }
-    .hero-band p strong {
-        color: #FFFFFF;
+    .hero-band p strong { color: #FFFFFF; }
+
+    /* 국가 선택 pills를 원본 남색 톤에 최대한 가깝게 (Streamlit 내부 구조 특성상
+       버전에 따라 100% 동일하게 적용되지 않을 수 있습니다) */
+    [data-testid="stPills"] [aria-pressed="true"],
+    [data-testid="stPills"] [aria-checked="true"] {
+        background-color: #3D5791 !important;
+        border-color: #3D5791 !important;
+        color: #FFFFFF !important;
+    }
+    button[kind="primary"] {
+        background-color: #3D5791 !important;
+        border-color: #3D5791 !important;
     }
 
     .detail-item {
@@ -153,31 +166,37 @@ st.markdown(
 )
 
 # ────────────────────────────────────────────────────────────
-# 입력 폼
+# 01 국가 선택 (+ 전체 선택 버튼)
 # ────────────────────────────────────────────────────────────
-st.markdown("**01 국가 선택**")
-st.caption("조회할 국가를 모두 선택하세요.")
-
 country_codes = list(COUNTRY_LABELS.keys())
 
-try:
-    selected_countries = st.pills(
-        "국가 선택",
-        options=country_codes,
-        format_func=lambda c: COUNTRY_LABELS[c],
-        selection_mode="multi",
-        label_visibility="collapsed",
-        key="country_pills",
-    )
-except AttributeError:
-    # 구버전 Streamlit 호환 (st.pills 미지원 시 멀티셀렉트로 대체)
-    selected_countries = st.multiselect(
-        "국가 선택",
-        options=country_codes,
-        format_func=lambda c: COUNTRY_LABELS[c],
-        label_visibility="collapsed",
-    )
+if "country_selection" not in st.session_state:
+    st.session_state.country_selection = []
 
+col_caption, col_btn = st.columns([3, 1])
+with col_caption:
+    st.markdown("**01 국가 선택**")
+    st.caption("조회할 국가를 모두 선택하세요.")
+with col_btn:
+    all_selected = set(st.session_state.country_selection) == set(country_codes)
+    if st.button("전체 해제" if all_selected else "전체 선택", use_container_width=True):
+        st.session_state.country_selection = [] if all_selected else country_codes.copy()
+        st.rerun()
+
+selected_countries = st.pills(
+    "국가 선택",
+    options=country_codes,
+    format_func=lambda c: COUNTRY_LABELS[c],
+    selection_mode="multi",
+    label_visibility="collapsed",
+    key="country_selection",
+)
+if selected_countries is None:
+    selected_countries = []
+
+# ────────────────────────────────────────────────────────────
+# 02 성분 입력
+# ────────────────────────────────────────────────────────────
 st.markdown("**02 성분 입력**")
 st.caption("쉼표(,) 또는 줄바꿈으로 구분해 입력하세요. 전성분표를 그대로 붙여넣어도 됩니다.")
 
@@ -222,7 +241,6 @@ if submit and selected_countries and ingredient_list:
     )
     st.markdown(legend_html, unsafe_allow_html=True)
 
-    # 매트릭스 데이터 구성
     rows = []
     details = []
     for ing in ingredient_list:
@@ -243,7 +261,8 @@ if submit and selected_countries and ingredient_list:
         bg, fg = STATUS_COLORS[status]
         return f"background-color: {bg}; color: {fg}; font-weight: 700; text-align: center;"
 
-    styled = df.style.applymap(color_cell)
+    # pandas 2.1+ 는 applymap 대신 map 사용 (구버전 applymap은 pandas 3.0에서 제거됨)
+    styled = df.style.map(color_cell)
     st.dataframe(styled, use_container_width=True)
 
     st.markdown("#### 세부 사항")
